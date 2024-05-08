@@ -27,7 +27,7 @@ ul li {
     -ms-user-select: none;
     user-select: none;
 
-    text-transform: capitalize; /**/
+    /* text-transform: capitalize;  */
 }
 
 ul li:nth-child(even) {
@@ -94,6 +94,13 @@ input {
     float: left;
     font-size: 16px;
     border-radius: 20px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+input::placeholder {
+    color: rgb(137, 122, 40);
+    text-transform: uppercase;
 }
 
 .addBtn {
