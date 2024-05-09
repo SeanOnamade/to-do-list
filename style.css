@@ -4,6 +4,7 @@
 
 html {
     background-color: rgb(250, 245, 215);
+    font-family: 'Spectral', 'sans-serif'; /* Spectral/Inter */
 }
 
 body {
@@ -36,6 +37,7 @@ ul li {
     user-select: none;
 
     /* text-transform: capitalize;  */
+    box-shadow: 2px 1px 3px rgb(218, 218, 218); /* IDK if I prefer this! Both are great! */
 }
 
 ul li:nth-child(even) {
@@ -48,8 +50,14 @@ ul li:hover {
 }
 
 ul li.checked { /* class we add */
+    background: rgb(0, 90, 0);
+    color: #e1e1e1;
+    text-decoration: line-through;
+}
+
+ul li.checked:nth-child(even) { /* class we add */
     background: green;
-    color: #fff;
+    color: #e1e1e1;
     text-decoration: line-through;
 }
 
@@ -96,6 +104,7 @@ ul li.checked::before {
     border-radius: 20px;
     justify-content: center;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgb(228, 238, 140);
 }
 
 h2 {
