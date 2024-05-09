@@ -8,10 +8,7 @@ html {
 }
 
 body {
-    padding-top: 150px;
-    padding-bottom: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding: 150px 400px 50px;
 }
 
 ul {
