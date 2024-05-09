@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: rgb(250, 245, 215);
+}
+
 body {
     padding-top: 150px;
     padding-bottom: 100px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 ul {
@@ -22,6 +26,7 @@ ul li {
     list-style-type: none;
     font-size: 18px;
     transition: all 0.2s ease;
+    margin-bottom: 5px;
     border-radius: 20px;
 
      /* make the list items unselectable */
@@ -39,12 +44,17 @@ ul li:nth-child(even) {
 
 ul li:hover {
     background: #ddd;
+    box-shadow: 2px 2px 5px rgb(218, 218, 218);
 }
 
 ul li.checked { /* class we add */
     background: green;
     color: #fff;
     text-decoration: line-through;
+}
+
+ul li.checked:hover {
+    box-shadow: 2px 2px 5px rgba(17, 87, 42, 0.564);
 }
 
 ul li.checked::before {
@@ -65,13 +75,17 @@ ul li.checked::before {
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: all 0.2s ease;
 }
 
 .close:hover {
-    background-color: #f44336;
+    background-color: #ff4639;
     color: white;
+}
+
+.close:focus {
+    outline: none;
 }
 
 .header {
@@ -81,6 +95,7 @@ ul li.checked::before {
     text-align: center;
     border-radius: 20px;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 h2 {
